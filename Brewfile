@@ -1,0 +1,2 @@
+brew 'syncthing'
+brew 'rclone'
