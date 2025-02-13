@@ -1,31 +1,52 @@
-# steamdeck
+# bazzite
 
-## Changes made manually on Steam Deck
+## Manually configurtion
 
-* Installed Firefox using UI
-* Installed Syncthing GTK in UI
+### Desktop
 
-On Steam Deck:
+* Disable internal display
+* Set resoluition to 2560x1440x60Hz
+* Set mouse sensitivity to 1/4
+* Configure night light 9pm to 6am in GNOME Settings
+* Re-arrange dock applications (This should follow windows scheme and I need to
+  switch to it for all other machines as well I think):
+  * Set files 1
+  * Terminal 2
+  * Browser/Firefox 3
+
+### Gaming mode / Steam Client
+
+* Configure night mode in Steam client
+* Disable UI sounds
+* Lower down microphone volume
+
+## 
+
+## Install packages with Brewfile
 
 ```console
-# Set password for deck user
-passwd
-sudo systemctl enable sshd --now
-
-# Increase swap file to 8G to fix RDR2 hanging the system
-sudo steamos-readonly disable # Disable the read only FS 
-cd /home # There is a "swapfile" located here we'll reuse it 
-sudo swapoff -a # Stop swap process 
-sudo dd if=/dev/zero of=swapfile bs=1G count=8 # Increase swap to 8gb 
-sudo mkswap swapfile # swap ready file again
-sudo swapon swapfile # Activate swap
-sudo steamos-readonly enable
+brew bundle
 ```
 
-On Air:
+## Configure services
 
 ```console
-ssh-keygen
-ssh-copy-id deck@192.168.50.96
-ssh deck@192.168.50.96
+brew services start syncthing
 ```
+
+## Battery
+
+```console
+sudo tee /etc/default/batterylimit <<EOF
+# Maximum amount the battery will charge to, including when the device is off.
+MAX_BATTERY_CHARGE_LEVEL=80
+EOF
+
+sudo systemctl enable batterylimit.service
+sudo systemctl start batterylimit.service
+```
+
+## Cons
+
+* Very slow downloads
+* Doom ETERNAL does not exit cleanly
