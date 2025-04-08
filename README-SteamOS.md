@@ -1,5 +1,64 @@
 # steamdeck
 
+## Backup
+
+Also, don't forget to backup individual games just in case for simple restore
+later if needed. Go over all the games and see if they don't support cloud
+saves.
+
+Current ones:
+
+* Max Payne 3
+* DarkSouls II
+
+Max Payne 3: 
+
+On mini:
+
+```console
+cd /Volumes/Samsung2TB/Data/Drive/Crypt/
+mkdir -p GameSaves/MaxPayne3
+```
+
+```console
+cd $HOME/.local/share/Steam/steamapps/compatdata/204100/pfx/drive_c/users/steamuser/Documents`
+tar cf RockstarGames.tar Rockstar\ Games
+scp RockstarGames.tar ivan@192.168.50.4:/Volumes/Samsung2TB/Data/Drive/Crypt/GameSaves/MaxPayne3/
+```
+
+DarkSoulsII
+
+On mini:
+
+```console
+cd /Volumes/Samsung2TB/Data/Drive/Crypt/GameSaves
+mkdir -p DarkSoulsII
+```
+
+On deck:
+
+```console
+cd "$HOME/.local/share/Steam/steamapps/compatdata/335300/pfx/drive_c/users/steamuser/AppData/Roaming/"
+tar cf DarkSoulsII.tar DarkSoulsII/
+scp DarkSoulsII.tar ivan@192.168.50.4:/Volumes/Samsung2TB/Data/Drive/Crypt/GameSaves/DarkSoulsII/
+```
+
+General backup:
+
+On mini:
+
+```console
+cd /Volumes/Samsung2TB/Data/Drive/Crypt/Machines/steamdeck/home/
+mkdir $(date +%Y-%m-%d)
+```
+
+On deck:
+
+```console
+tar cf /run/media/deck/56a47c24-d236-4f50-b010-bd31dd058d6d/deck.tar deck/
+scp /run/media/deck/56a47c24-d236-4f50-b010-bd31dd058d6d/deck.tar ivan@192.168.50.4:/Volumes/Samsung2TB/Data/Drive/Crypt/Machines/steamdeck/home/2025-04-05
+```
+
 ## Changes made manually on Steam Deck
 
 * Installed Firefox using UI
