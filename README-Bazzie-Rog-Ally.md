@@ -2,4 +2,7 @@
 
 ## Manual steps
 
-- In HHD set RGB Mode to Off
+### HHD
+
+- In set RGB Mode to Off
+- Set in Battery Settings Charge Limit to 80%
