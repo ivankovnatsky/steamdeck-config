@@ -2,4 +2,4 @@
 
 ## Manual steps
 
-- In HHD disable RGB
+- In HHD set RGB Mode to Off
