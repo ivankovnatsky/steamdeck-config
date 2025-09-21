@@ -99,7 +99,7 @@ cd ~/bin
 tar xf syncthing-linux-amd64-v1.28.0.tar.gz
 mv syncthing-linux-amd64-v1.28.0/syncthing .
 rm -rf syncthing-linux-amd64-v1.28.0*
-~/bin/syncthing
+~/bin/syncthing -no-browser -no-restart -no-upgrade -gui-address=0.0.0.0:8384 -logflags=0
 ```
 
 ### Rclone
