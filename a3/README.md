@@ -20,6 +20,14 @@ Reference: https://docs.bazzite.gg/General/Installation_Guide/dual_boot_setup_gu
 
 Bazzite
 
+### System Updates
+
+Periodically run to upgrade the system:
+
+```console
+ujust update
+```
+
 ## During installation
 
 - Only choosen disk where to install OS
