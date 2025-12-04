@@ -5,3 +5,10 @@
 * Set display settings:
   * Resolution: 1920x1080
   * Disable built-in display
+
+## Game-specific configurations
+
+### Black Myth Wukong
+
+* Set sharpness to 0
+* Enabled FSR
