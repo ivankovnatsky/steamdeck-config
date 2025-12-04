@@ -93,3 +93,5 @@ Still has locked in resoltuin 2xxx/1xxx something. I can play, but Windows has b
   - Sharpening Intensity: 0 (reduces artifacts when moving character, likely due to monkey fur rendering)
 - Camera:
   - Camera Shake: 0
+- Graphics:
+  - Motion Blur: Strong
