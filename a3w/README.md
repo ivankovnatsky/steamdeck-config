@@ -1,5 +1,9 @@
 # a3w - Windows 11 for Wukong
 
+## Disk Configuration
+
+Previously installed both Windows and Bazzite separately on the whole disk. Now splitting the 2TB disk equally between both systems to compare game performance. Starting with Windows installation on unallocated space.
+
 ## Note
 
 Need to download new ISO for US language. Had to use Safari private mode (which uses Cloudflare DNS) - my normal NextDNS doesn't work and MS blocks from downloading ISO otherwise.
@@ -11,6 +15,12 @@ Need to run `wipefs --all` on the disk because Windows can't work with Linux dis
 Windows 11
 
 ### Installation
+
+#### First Reboot Blue Screen Issue
+
+After first reboot during Windows installation, may encounter a blue screen recovery error (not BSOD). This happens because the installer creates two Windows boot entries. To resolve:
+- Select the Windows entry with the volume indicator beside it
+- This will boot correctly and continue the installation process
 
 #### Network Bypass (No LAN/Ethernet Driver)
 
@@ -115,3 +125,15 @@ scoop install steam
 - Add Wukong to startup folder for automatic launch (if not already done):
   - Press `Win + R`, type `shell:startup`, press Enter
   - Create shortcut to Black Myth: Wukong executable in this folder
+
+#### In-Game Settings
+
+- Display:
+  - Sharpening Intensity: 0 (reduces artifacts when moving character, likely due to monkey fur rendering)
+- Camera:
+  - Camera Shake: 0
+- Graphics:
+  - All settings: Cinematic
+  - Ray Tracing: Very High
+  - Super Resolution: DLSS
+  - Super Resolution Sharpness: 60 (reduced from 85 to minimize movement artifacts)
