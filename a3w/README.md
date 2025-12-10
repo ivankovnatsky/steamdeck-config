@@ -92,6 +92,9 @@ scoop bucket add extras
 scoop install hwinfo
 # Added hwinfo to startup to run in sensors mode
 
+# Install CrystalDiskInfo (disk health monitoring)
+scoop install crystaldiskinfo
+
 # Install Steam
 scoop bucket add games
 scoop install steam
