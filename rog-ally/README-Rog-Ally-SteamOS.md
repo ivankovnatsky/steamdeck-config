@@ -12,3 +12,8 @@
 
 * Set sharpness to 0
 * Enabled FSR
+
+### Cyberpunk 2077
+
+* Graphics preset: Steam Deck
+* Disabled max FPS
