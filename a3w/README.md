@@ -125,7 +125,7 @@ scoop install steam
 ### Black Myth: Wukong
 
 - Started download
-- Add Wukong to startup folder for automatic launch (if not already done):
+- Auto-start Wukong on boot (currently disabled):
   - Press `Win + R`, type `shell:startup`, press Enter
   - Create shortcut to Black Myth: Wukong executable in this folder
 
