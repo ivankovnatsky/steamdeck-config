@@ -17,3 +17,7 @@
 
 * Graphics preset: Steam Deck
 * Disabled max FPS
+
+### Blasphemous
+
+* Video settings manually set for 1920x1080

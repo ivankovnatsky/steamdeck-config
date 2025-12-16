@@ -150,3 +150,9 @@ EOF
 ```console
 echo 100 | sudo tee /sys/class/hwmon/hwmon3/max_battery_charge_level
 ```
+
+## Game-specific configurations
+
+### Blasphemous
+
+* Video settings manually set for 1280x800
