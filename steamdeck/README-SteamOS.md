@@ -151,6 +151,12 @@ EOF
 echo 100 | sudo tee /sys/class/hwmon/hwmon3/max_battery_charge_level
 ```
 
+## Bluetooth
+
+### AirPods Pro
+
+Connected via Bluetooth settings.
+
 ## Game-specific configurations
 
 ### Blasphemous
