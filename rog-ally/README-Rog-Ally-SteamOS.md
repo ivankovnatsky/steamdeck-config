@@ -6,6 +6,12 @@
   * Resolution: 1920x1080
   * Disable built-in display
 
+## Bluetooth
+
+### AirPods Pro
+
+Connected via Bluetooth settings.
+
 ## Game-specific configurations
 
 ### Black Myth Wukong
