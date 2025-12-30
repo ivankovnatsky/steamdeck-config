@@ -2,7 +2,7 @@
 
 ## Changes made manually
 
-* Set display settings:
+* Set external display settings:
   * Resolution: 1920x1080
   * Disable built-in display
 
